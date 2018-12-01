@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+body {
+  font-family: "Nunito", sans-serif;
+
+  .app {
+
+    // background color variables
+    --class-message--warning: linear-gradient(
+        27deg,
+        rgb(255, 166, 0),
+        rgb(235, 117, 209)
+      );
+
+    --class-message--success: linear-gradient(
+        27deg,
+        rgb(0, 255, 128),
+        rgb(0, 182, 97)
+      );
+    
+      --class-message--error: linear-gradient(
+        27deg,
+        rgb(255, 0, 119),
+        rgb(163, 4, 83)
+      );
+
+    
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      width: 330px;
+      height: 302px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      justify-content: center;
+      padding: 5px;
+
+      .message__header {
+        font-weight: bold;
+        align-self: center;
+        font-size: 20pt;
+      }
+  
+      .message__paragraph {
+        width: 80%;
+        align-self: center;
+        font-size: 15pt;
+      }
+
+      .message__btn {
+        height: 48px;
+        background-color: #fff;
+        width: 183px;
+        border-radius: 24px;
+        border: none;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+          0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        align-self: center;
+        font-size: 13pt;
+        font-weight: bold;
+      }
+  
+      .message__btn--warning{
+          color: rgb(248, 91, 0);
+      }
+  
+      .message__btn--success{
+          color: rgb(0, 144, 55);
+      }
+  
+      .message__btn--error{
+          color: rgb(199, 0, 99);
+      }
+    }
+
+    .message--success {
+      background-image: var(--class-message--success);
+    }
+
+    .message--warning {
+      background-image: var(--class-message--warning);
+    }
+
+    .message--error {
+      background-image: var(--class-message--error);
+    }
+
+  }
+}
