@@ -3,17 +3,17 @@ body {
   font-family: "Nunito", sans-serif;
 }
 body .app {
-  --class-message--warning: linear-gradient(
+  --bg--warning: linear-gradient(
       27deg,
       rgb(255, 166, 0),
       rgb(235, 117, 209)
     );
-  --class-message--success: linear-gradient(
+  --bg--success: linear-gradient(
       27deg,
       rgb(0, 255, 128),
       rgb(0, 182, 97)
     );
-  --class-message--error: linear-gradient(
+  --bg--error: linear-gradient(
     27deg,
     rgb(255, 0, 119),
     rgb(163, 4, 83)
@@ -65,13 +65,13 @@ body .app .message .message__btn--error {
   color: #c70063;
 }
 body .app .message--success {
-  background-image: var(--class-message--success);
+  background-image: var(--bg--success);
 }
 body .app .message--warning {
-  background-image: var(--class-message--warning);
+  background-image: var(--bg--warning);
 }
 body .app .message--error {
-  background-image: var(--class-message--error);
+  background-image: var(--bg--error);
 }
 
 /*# sourceMappingURL=main.css.map */
